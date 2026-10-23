@@ -1,0 +1,11 @@
+{
+  "folders": [{ "name": "ET4230 - P2P C#", "path": "." }],
+  "settings": {
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "dotnet.defaultSolution": "ET4230.P2P.sln"
+  },
+  "extensions": { "recommendations": ["ms-dotnettools.csdevkit", "ms-python.python"] }
+}

@@ -1,0 +1,31 @@
+{
+  "reviewedOn": "2026-10-23",
+  "purpose": "source provenance, not copied course or project state",
+  "files": [
+    {
+      "path": "C:\\Users\\KimSakota\\Downloads\\ET4230_Bai_tap_lon_Mo_phong_CAP_NHAT_2026.docx",
+      "sha256": "7729aeaf863a3c308f41b19fb1857cebf80acd17da01cbf686e1cb8073bae735",
+      "bytes": 58425
+    },
+    {
+      "path": "D:\\2. FullStack\\2026.1\\Hệ điều hành\\BTL\\AGENTS.md",
+      "sha256": "a54abadf4cc26b55473162ed54c43ebdee470af242959c99719e3fd5ed720dad",
+      "bytes": 4614
+    },
+    {
+      "path": "D:\\2. FullStack\\2026.1\\Hệ điều hành\\BTL\\docs\\Kien-truc-du-an.md",
+      "sha256": "165490d760691ab38efbad03781ad53e9c4d65a3d403d99a7096037bcab144af",
+      "bytes": 15268
+    },
+    {
+      "path": "D:\\2. FullStack\\2026.1\\Hệ điều hành\\BTL\\docs\\Lo-trinh-hoc.md",
+      "sha256": "f14189f840c5af9e58da8de8125c8c485eaf1becb14057744ea1946392904ba4",
+      "bytes": 9581
+    },
+    {
+      "path": "D:\\2. FullStack\\2026.1\\Hệ điều hành\\BTL\\agent\\DOCS_GUIDE.md",
+      "sha256": "e1ae5071d2c318160cfa14042de83099cd8b2f3d1e889b321f8d335102a68e92",
+      "bytes": 4540
+    }
+  ]
+}

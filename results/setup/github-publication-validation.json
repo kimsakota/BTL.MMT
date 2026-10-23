@@ -1,0 +1,15 @@
+{
+  "scope": "project structure/configuration/provenance only; no P2P application tests",
+  "checkedAtUtc": "2026-10-23T12:31:53.513067+00:00",
+  "passed": true,
+  "counts": {
+    "markdown_files": 48,
+    "local_links": 144,
+    "external_local_links_skipped": 0,
+    "json_files": 14,
+    "snapshot_files": 21,
+    "source_pdfs": 14,
+    "protocol_vectors": 2
+  },
+  "errors": []
+}

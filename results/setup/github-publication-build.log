@@ -1,0 +1,11 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  ET4230.VstReference -> D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\bin\Release\net10.0\ET4230.VstReference.dll
+  ET4230.Core -> D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.Core\bin\Release\net10.0\ET4230.Core.dll
+  ET4230.Cli -> D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.Cli\bin\Release\net10.0\ET4230.Cli.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.26

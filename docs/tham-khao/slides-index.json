@@ -1,0 +1,77 @@
+{
+  "source_directory": "../Slide",
+  "page_numbering": "PDF page, 1-based",
+  "files": [
+    {
+      "file": "01 Introduction.pdf",
+      "pages": 126,
+      "sha256": "e6b8b7eead5c58a475c88adabf163a0e70f96432336171ae70d8608231f33ac9"
+    },
+    {
+      "file": "02 Link Layer.pdf",
+      "pages": 50,
+      "sha256": "79b59ddfeb3ff4d964d2dcf32fe131f07a04e6eaab53b09d76c3b2127be200ca"
+    },
+    {
+      "file": "02-3 LAN Polling, Aloha.pdf",
+      "pages": 50,
+      "sha256": "5cdc0c635d034a3c9971886f81749dcfe34bb8d0a65eaca1a8459544c27d57d5"
+    },
+    {
+      "file": "02-4 LAN CSMA.pdf",
+      "pages": 54,
+      "sha256": "5daf470b7e6d8cfbb3f4b172fd4de425788d300a0b95915df7a4af7d96e87b96"
+    },
+    {
+      "file": "02-5 Hub-Bridges.pdf",
+      "pages": 35,
+      "sha256": "1297bf0b2256a811a363b6cc040d1d4464ccc04039c3ed2d8288ea78130174b9"
+    },
+    {
+      "file": "03-1 IP address (updated).pdf",
+      "pages": 43,
+      "sha256": "455556625867f42c0eff69f1783e30922c5c96ca0387ae0077e88e454eec2ff6"
+    },
+    {
+      "file": "03-2 Internet Protocol (updated).pdf",
+      "pages": 50,
+      "sha256": "fc0f8f747bad1be3240c08a1c56bcfa714c1ca452e701125ad7a51378a8f1db2"
+    },
+    {
+      "file": "03-3 Routing Algorithm.pdf",
+      "pages": 29,
+      "sha256": "4a09b1c988d728d2543e1fe8cff97ba6bf0d0c1f009cf4d8e211a0bb8d56180f"
+    },
+    {
+      "file": "03-4 Routing Protocol (update).pdf",
+      "pages": 34,
+      "sha256": "77ce290181b767fbf663b077fd549da43ce1c3d050eb1b10e33e688b643f3eec"
+    },
+    {
+      "file": "03-5 Routing in WSNs and IoT applications.pdf",
+      "pages": 86,
+      "sha256": "d914b0d9c88720d3cd8212ddfdc54bee25c4d02176b73aef61e6d4c90c7cf078"
+    },
+    {
+      "file": "03-6 Routing Protocol for MANET.pdf",
+      "pages": 26,
+      "sha256": "c706bdd0af1e0ed1c9493e0c43a7609f56d35db98ff345aad03a5c15424951a7"
+    },
+    {
+      "file": "04-1 UDP, TCP.pdf",
+      "pages": 28,
+      "sha256": "2cf38a6916617836e59515c921014f8a5649925b8f56df38205c54b01f812768"
+    },
+    {
+      "file": "04-2 Congestion control.pdf",
+      "pages": 38,
+      "sha256": "0736a3d56c1da87830ebf0e32cb46445440232f2ba54941348b9ca16607553ef"
+    },
+    {
+      "file": "04-3 Socket.pdf",
+      "pages": 48,
+      "sha256": "a0c330ef3806dea78b1adbc49c8aeb676110e96517a270646f21fdac8bf90a1b"
+    }
+  ],
+  "total_pages": 697
+}

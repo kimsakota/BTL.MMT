@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ET4230: build",
+      "type": "process",
+      "command": "dotnet",
+      "args": ["build", "ET4230.P2P.sln", "--configuration", "Debug", "--nologo"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ET4230: bootstrap help",
+      "type": "process",
+      "command": "dotnet",
+      "args": ["run", "--project", "src/ET4230.Cli", "--", "--help"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ET4230: validate project",
+      "type": "process",
+      "command": "python",
+      "args": ["tools/check_project.py"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

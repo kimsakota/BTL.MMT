@@ -1,0 +1,32 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  ET4230.Core -> D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.Core\bin\Release\net10.0\ET4230.Core.dll
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Keys\KeyPath.cs(67,37): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('KeyEntryPath') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Keys\KeyPath.cs(74,50): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('KeyEntryPath') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(505,26): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(508,26): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(505,60): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(505,46): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(510,23): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('object') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(511,21): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\StringWriter.cs(51,15): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\StringWriter.cs(52,24): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+  ET4230.VstReference -> D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\bin\Release\net10.0\ET4230.VstReference.dll
+  ET4230.Cli -> D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.Cli\bin\Release\net10.0\ET4230.Cli.dll
+
+Build succeeded.
+
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Keys\KeyPath.cs(67,37): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('KeyEntryPath') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Keys\KeyPath.cs(74,50): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('KeyEntryPath') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(505,26): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(508,26): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(505,60): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(505,46): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(510,23): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('object') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\Memory.cs(511,21): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\StringWriter.cs(51,15): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+D:\2. FullStack\2026.1\Mạng máy tính\BTL\references\VstHelper\Memory\StringWriter.cs(52,24): warning CS8500: This takes the address of, gets the size of, or declares a pointer to a managed type ('T') [D:\2. FullStack\2026.1\Mạng máy tính\BTL\src\ET4230.VstReference\ET4230.VstReference.csproj]
+    10 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.29

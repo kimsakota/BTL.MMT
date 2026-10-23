@@ -1,0 +1,19 @@
+**/bin/
+**/obj/
+.vs/
+.idea/
+*.user
+*.suo
+tmp/
+artifacts/
+results/raw/
+demo/data/
+*.pcap
+*.pcapng
+*.part
+*.resume.json
+agent/history/*.jsonl
+__pycache__/
+*.pyc
+# Ignore only an accidental root checkout; keep references/VstHelper available to Git.
+/VstHelper/

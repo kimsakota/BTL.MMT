@@ -1,0 +1,30 @@
+name: Project bootstrap validation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  bootstrap-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.0.x'
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Validate docs, config, vectors and snapshot hashes
+        run: python tools/check_project.py
+      - name: Build the bootstrap and Vst reference
+        run: dotnet build ET4230.P2P.sln --configuration Release --nologo
+      - name: Run bootstrap help
+        run: dotnet run --no-build --configuration Release --project src/ET4230.Cli -- --help
+      - name: Run bootstrap version
+        run: dotnet run --no-build --configuration Release --project src/ET4230.Cli -- --version

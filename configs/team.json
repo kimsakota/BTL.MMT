@@ -1,0 +1,16 @@
+{
+  "course": "ET4230",
+  "topic": 14,
+  "language": "C#",
+  "languageConfirmedBy": "Linh",
+  "confirmedOn": "2026-10-23",
+  "officialGroupId": null,
+  "deadline": null,
+  "members": [
+    { "name": "Linh", "fullName": null, "studentId": null, "github": null, "proposedArea": "transport, buffer integration", "assignmentAccepted": false },
+    { "name": "Minh", "fullName": null, "studentId": null, "github": null, "proposedArea": "manifest, storage, integrity, resume", "assignmentAccepted": false },
+    { "name": "Cường", "fullName": null, "studentId": null, "github": null, "proposedArea": "tracker, discovery, peer metadata", "assignmentAccepted": false },
+    { "name": "Quân", "fullName": null, "studentId": null, "github": null, "proposedArea": "scheduler, pipeline, peer churn", "assignmentAccepted": false },
+    { "name": "Tú", "fullName": null, "studentId": null, "github": null, "proposedArea": "CLI, harness, logging, experiments", "assignmentAccepted": false }
+  ]
+}

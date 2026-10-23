@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "status": "planned; no measurements have been run",
+  "runsPerConfiguration": 5,
+  "totalPeersIncludesSeed": true,
+  "totalPeers": [3, 5, 8],
+  "fileSizeBytes": 268435456,
+  "pieceSizeBytes": 1048576,
+  "blockSizeBytes": 16384,
+  "runDeadlineSeconds": 180,
+  "initialSeedApplicationUploadLimitMbps": 100,
+  "randomSeeds": [4230, 4231, 4232, 4233, 4234],
+  "comparisonOrder": ["client-server_vs_p2p", "sequential_vs_rarest-first", "buffer_strategy"],
+  "scenarios": [
+    { "id": "S1", "name": "stable", "receiverApplicationUploadMbpsPattern": [20], "departingReceivers": 0, "departAtSeconds": null, "seedAlwaysOnline": true },
+    { "id": "S2", "name": "heterogeneous-upload", "receiverApplicationUploadMbpsPattern": [20, 5, 10], "departingReceivers": 0, "departAtSeconds": null, "seedAlwaysOnline": true },
+    { "id": "S3", "name": "peer-departure", "receiverApplicationUploadMbpsPattern": [20], "departingReceivers": 1, "departAtSeconds": 10, "seedAlwaysOnline": true }
+  ]
+}

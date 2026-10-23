@@ -1,0 +1,94 @@
+{
+  "checkedAtUtc": "2026-10-23T06:42:21.299764+00:00",
+  "scope": "bootstrap build/CLI only; no network or allocator runtime tests",
+  "sdk": "10.0.301",
+  "checks": [
+    {
+      "name": "sdk-version",
+      "command": [
+        "dotnet",
+        "--version"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "sdk-version.log"
+    },
+    {
+      "name": "build-release",
+      "command": [
+        "dotnet",
+        "build",
+        "ET4230.P2P.sln",
+        "--configuration",
+        "Release",
+        "--nologo"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "build-release.log"
+    },
+    {
+      "name": "cli-help",
+      "command": [
+        "dotnet",
+        "run",
+        "--no-build",
+        "--configuration",
+        "Release",
+        "--project",
+        "src/ET4230.Cli",
+        "--",
+        "--help"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "cli-help.log"
+    },
+    {
+      "name": "cli-version",
+      "command": [
+        "dotnet",
+        "run",
+        "--no-build",
+        "--configuration",
+        "Release",
+        "--project",
+        "src/ET4230.Cli",
+        "--",
+        "--version"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "passed": true,
+      "log": "cli-version.log"
+    },
+    {
+      "name": "cli-invalid",
+      "command": [
+        "dotnet",
+        "run",
+        "--no-build",
+        "--configuration",
+        "Release",
+        "--project",
+        "src/ET4230.Cli",
+        "--",
+        "__bootstrap_unknown__"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "passed": true,
+      "log": "cli-invalid.log"
+    }
+  ],
+  "uniqueBuildWarnings": 10,
+  "warningCodes": [
+    "CS8500"
+  ],
+  "applicationTestsRun": false,
+  "networkTestsRun": false,
+  "benchmarksRun": false
+}

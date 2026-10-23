@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "status": "planned configuration; not consumed by bootstrap CLI",
+  "tracker": { "host": "127.0.0.1", "port": 42300, "heartbeatSeconds": 5, "ttlSeconds": 20 },
+  "peer": { "listenHost": "127.0.0.1", "advertiseHost": "127.0.0.1", "port": 42301 },
+  "transfer": { "pieceSizeBytes": 1048576, "blockSizeBytes": 16384, "maxPayloadBytes": 1048576, "maxControlBytes": 65536, "requestTimeoutSeconds": 15, "maxRetries": 3 },
+  "limits": { "maxConnections": 4, "maxInflightPerConnection": 8, "maxBufferCount": 256, "writeQueueCapacity": 64, "uploadQueueCapacity": 64, "payloadMemoryBudgetBytes": 33554432, "hashScratchBytes": 1048576 },
+  "strategy": { "mode": "p2p", "pieceSelection": "sequential", "buffers": "per-connection", "applicationUploadLimitMbps": 20 }
+}

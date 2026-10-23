@@ -1,0 +1,122 @@
+{
+  "captured_on": "2026-10-23",
+  "source_remote": "https://github.com/kimsakota/ShiftSort.git",
+  "source_head": "7236e72f83c2b780bf37fa42c9cf601d3d6db35c",
+  "source_working_tree_dirty": true,
+  "snapshot_kind": "working-tree bytes, including local modifications; not a clean copy of source_head",
+  "original_source": "D:\\2. FullStack\\2026.1\\Hệ điều hành\\BTL\\VstHelper",
+  "excluded": [
+    "Git metadata",
+    "build output",
+    "IDE caches",
+    "personal settings",
+    "unrelated documents"
+  ],
+  "files": [
+    {
+      "path": "Enums.cs",
+      "sha256": "51cd0884c80a8302ea16b3ced55af13d72ccd942461869931a60d17c7fe19aca",
+      "bytes": 3414
+    },
+    {
+      "path": "Helper/HexHelper.cs",
+      "sha256": "abfbf0c57007528061e9da69d280eecf40b885c92dd1d53c3328db935b0a3252",
+      "bytes": 3901
+    },
+    {
+      "path": "Helper/JsonHelper.cs",
+      "sha256": "d4f33be3ae82b7adc9a8a3070d9124ddbdc544a2827bdb9c064d4a4db3929a71",
+      "bytes": 1672
+    },
+    {
+      "path": "Helper/StringHelper.cs",
+      "sha256": "d0f13fa57bd46c0520e7ffc002b0cbdf221e7e3f1d2c9a2f6fdc8180fc08ab14",
+      "bytes": 9619
+    },
+    {
+      "path": "IO/File.cs",
+      "sha256": "8df0df97722938d19b048eef6cf26253a168056fd802e7efbdf95b6c3e41d7f0",
+      "bytes": 10306
+    },
+    {
+      "path": "IO/MappedFile.cs",
+      "sha256": "8aa74d495821d11272d84de8445391308454c8c9b8e5274e26b1077188b7cb49",
+      "bytes": 4550
+    },
+    {
+      "path": "Keys/KeyEntry.cs",
+      "sha256": "7f6a2fc2bd60dff2840011965fc1efdaf851c8827bb252412655d6fd005e6b79",
+      "bytes": 6404
+    },
+    {
+      "path": "Keys/KeyIndexer.cs",
+      "sha256": "9aff9a68f61c190e912f1aadf8f5f374bd6361689e24ec55e318ecfd114c2fdf",
+      "bytes": 8169
+    },
+    {
+      "path": "Keys/KeyPath.cs",
+      "sha256": "2188fb0783405198e4f4b3ba5a5413d7a9585a5b8dd870c31fc35dc981e6b3da",
+      "bytes": 2165
+    },
+    {
+      "path": "Lists/RawList.cs",
+      "sha256": "18ac1c5d77e6db63ad66aa324409e68c07ef36f1cdea3255abaacd96043a8a7d",
+      "bytes": 9797
+    },
+    {
+      "path": "Math.cs",
+      "sha256": "92d7792844b3e399a0bb6c8e09716c284685c17ba458f6a68d0ecc3669e86a6b",
+      "bytes": 14527
+    },
+    {
+      "path": "Memory/Buffer.cs",
+      "sha256": "6749bdc377f6610bdb811d0df3d879e732c0f7d0b10904f46de86f75f8c53f50",
+      "bytes": 5152
+    },
+    {
+      "path": "Memory/DataPage.cs",
+      "sha256": "7b75b8526735436784262bc71a0b0b356ab7635e874ccb8a8ceeb1a96bae6307",
+      "bytes": 3037
+    },
+    {
+      "path": "Memory/DataSlot.cs",
+      "sha256": "65f40b2d37d152b5c5cc2e46891fd46d61b85088f207bf06bdbff54e7cfacff2",
+      "bytes": 3824
+    },
+    {
+      "path": "Memory/Memory.cs",
+      "sha256": "2d1f2b54329be608ddd0aacabb39ce633c3c33b17faccb46cf0a0eeef0dab1b0",
+      "bytes": 22425
+    },
+    {
+      "path": "Memory/StringReader.cs",
+      "sha256": "da5e96f31a23e29a3b12c1321128a1e06f61fd95bff558e6c92e6b95811c752b",
+      "bytes": 4657
+    },
+    {
+      "path": "Memory/StringWriter.cs",
+      "sha256": "d9c32c68e7ba0a8f3668d17ab25dd3d6e1b0db978b66c6cb53d7a9f2fed4441f",
+      "bytes": 5409
+    },
+    {
+      "path": "ObjectId.cs",
+      "sha256": "e6c8536d8cfbd2df81d47aaf592365b8d744ab040c9b90db5c7c56b500908246",
+      "bytes": 4631
+    },
+    {
+      "path": "Thread/LockManager.cs",
+      "sha256": "f46c58adef82b76539a4c7824d74c18440c8f6d080de91e2b2804462c6184688",
+      "bytes": 4096
+    },
+    {
+      "path": "Thread/SystemClock.cs",
+      "sha256": "6567550ab64c03a3ee2fb742df1a545eda9693bb1d0e06c4747b67460995bad9",
+      "bytes": 2894
+    },
+    {
+      "path": "VstHelper.csproj",
+      "sha256": "35481ae02893d9ddc18cc32368728748b8e9333dba7d8e5f72d15354d7269653",
+      "bytes": 197
+    }
+  ]
+}

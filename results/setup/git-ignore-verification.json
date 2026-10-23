@@ -1,0 +1,7 @@
+{
+  "checkedAtUtc": "2026-10-23T12:27:16.699832+00:00",
+  "scope": "Git ignore rules only; no stage, commit, push or application test",
+  "passed": true,
+  "snapshotFilesVisibleToGit": 23,
+  "generatedOrAccidentalPathsStillIgnored": 5
+}

@@ -1,0 +1,7 @@
+**/bin/**
+**/obj/**
+tmp/**
+results/raw/**
+demo/data/**
+agent/history/*.jsonl
+references/VstHelper/**

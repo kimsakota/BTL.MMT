@@ -1,0 +1,8 @@
+{
+  "purpose": "Design vectors, not captured traffic or test results",
+  "headerSizeBytes": 16,
+  "vectors": [
+    { "name": "HAVE-piece-2", "type": 4, "requestId": 0, "payloadLength": 4, "headerHex": "45343233010400000000000000000004", "payloadHex": "00000002" },
+    { "name": "REQUEST_BLOCK-piece-2", "type": 5, "requestId": 7, "payloadLength": 12, "headerHex": "4534323301050000000000070000000c", "payloadHex": "000000020000000000004000" }
+  ]
+}
