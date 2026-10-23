@@ -1,25 +1,114 @@
-# Bài 11 Bàn giao và bảo vệ cá nhân
+# Bài 11 · Giải thích được điều mình hiểu và điều mình đã làm
 
-Mục tiêu: biến source/config/evidence thành sản phẩm nộp đúng yêu cầu. Báo cáo cuối và video chưa được tạo ở bộ khởi tạo; [hướng dẫn báo cáo và demo](../Bao-cao-va-demo.md) xác định nội dung cần chuẩn bị từ kết quả thật.
+**Học trước:** module liên quan và cách đọc evidence ở Bài 09–10. **Mục tiêu:** chuyển kiến thức, thiết kế, code và số đo thành một lập luận mà người khác kiểm tra được.
 
-## Báo cáo
+Yêu cầu/rubric ở [Tổng quan](../Tong-quan.md); dàn ý và checklist bàn giao ở [Báo cáo và demo](../Bao-cao-va-demo.md). Bài này dạy cách giải thích, không tạo một bản báo cáo kết quả khi ứng dụng chưa có.
 
-Trình bày vấn đề, kiến thức ET4230, thiết kế/giao thức, implementation, test, thí nghiệm, kết quả và giới hạn. Khuyến nghị 15–25 trang không tính phụ lục theo đề. Những module/chức năng chưa làm phải ghi đúng phạm vi; không đưa sơ đồ đích vào mục “đã triển khai” nếu source chưa có.
+## 1. Một phát biểu kỹ thuật cần ba phần
 
-Mỗi hình/bảng có đơn vị, cấu hình, số lần chạy và nguồn raw data. Tài liệu kế thừa/AI có khai báo. Linh, Minh, Cường, Quân, Tú tự xác nhận phần đóng góp và khả năng giải thích; không lấy tên trong bảng phân công đề xuất làm evidence.
+| Phần | Câu hỏi | Ví dụ cách viết |
+|---|---|---|
+| Claim | Đang khẳng định điều gì? | Codec không phụ thuộc cách chia Receive |
+| Evidence | Người khác xem đâu để kiểm tra? | Vector cố định, test split tại mọi byte, integration socket |
+| Scope/limit | Phát biểu đúng trong phạm vi nào? | Version1, type đã hỗ trợ, payload cap đã chốt |
 
-## Demo 3–5 phút đề xuất
+“Chương trình chạy tốt” thiếu cả điều kiện và tiêu chí. “Đã test hết” không thể kiểm tra nếu không có danh sách input, expected, revision và lệnh.
 
-30 s giới thiệu topology → 45 s tracker/seed/peer ready → 60 s tải và chia sẻ nhiều nguồn → 45 s ngắt một peer, thấy giao lại → 45 s hash và kết quả/giới hạn. Chỉ diễn phần đã chạy thật, giữ phương án log/pcap/video dự phòng; đừng bịa kết quả để bám kịch bản thời gian.
+Một test pass không chứng minh mọi case. Một sơ đồ thiết kế cũng không chứng minh source đã có. Khi viết báo cáo, đặt đúng nhãn: yêu cầu, đề xuất, implementation hiện có, kết quả thực nghiệm và giới hạn.
 
-## Câu hỏi từng người phải trả lời
+## 2. Kể đường đi một block để nối các môn kiến thức
 
-Giải thích một frame từ header tới BLOCK; vì sao receive có thể thiếu; ai sở hữu buffer khi đang await/ghi; khi nào piece Verified; mất nguồn cuối thì kết quả gì; peer selection khác routing IP thế nào; số đo nào chứng minh kết luận và giới hạn ở đâu.
+Tự kể thành một chuỗi, không chỉ đọc tên class:
 
-Người phụ trách module phải chỉ ra API/caller, test lỗi và một quyết định thiết kế có trade-off. Người làm harness phải giải thích denominator, random seed và thu log, không chỉ mở biểu đồ.
+1. Local state cho biết block nào thiếu; remote bitmap cho biết nguồn ứng viên.
+2. Scheduler dành request ID/credit và expected piece/offset/length.
+3. Codec biểu diễn thông điệp theo big-endian; socket vận chuyển byte qua TCP.
+4. Peer nguồn chỉ upload piece đã Verified.
+5. Receiver parser nhận đủ/validate, chuyển buffer theo hợp đồng tới writer.
+6. Writer ghi đúng offset; piece đủ thì hash; đúng mới Verified/HAVE.
+7. Lỗi/timeout tới bước nào thì state và resource ở bước ấy có failure path.
 
-## Kiểm tra gói nộp
+Nếu không biết giải thích tại một mũi tên, quay về bài tương ứng. Một người không cần thuộc toàn bộ implementation của người khác, nhưng phải hiểu contract mình gọi và dữ liệu mình trao.
 
-Clone sạch ở thư mục khác, theo README build/chạy lại, chọn một test/cấu hình nhỏ bảo vệ được. Nộp source/config/report/data/scripts cần thiết, video hoặc minh chứng tương đương, slide và nhật ký. Không đóng gói bin/obj, VM lớn, toàn bộ slide gốc hoặc dữ liệu không cần thiết. Tên kỳ/nhóm chỉ điền khi có số thực tế.
+## 3. Ví dụ một câu hỏi bảo vệ và cách xây câu trả lời
 
-Hoàn thành G7 khi checklist yêu cầu R01–R09 có evidence, đóng góp được xác nhận và người khác tái lập được bản demo đã chọn.
+**Câu hỏi:** “TCP tin cậy rồi, tại sao nhóm vẫn dùng SHA-256?”
+
+Cách trả lời có lập luận:
+
+- TCP cung cấp dòng byte trong kết nối, không chứng minh receiver ghi đúng offset hoặc nguồn đang phục vụ đúng phiên bản tệp.
+- Manifest cung cấp digest kỳ vọng; hash piece giúp phát hiện phần sai trước khi chia sẻ lại, hash toàn tệp kiểm đầu ra.
+- Test có thể cố ý sửa byte ứng dụng hoặc ghi sai offset để kiểm receiver không công bố Verified.
+- Hash theo manifest tin cậy là kiểm tra integrity của bài lab, chưa tự xác thực danh tính peer hoặc tạo TLS.
+
+Đây là hướng lập luận, không phải đoạn bắt học thuộc. Người làm module cần chỉ được code/test thật hỗ trợ từng phát biểu khi implementation đã có.
+
+## 4. Từ module riêng tới câu hỏi cá nhân
+
+| Nếu được Linh giao mảng | Phải tự giải thích được | Evidence phù hợp khi đã làm |
+|---|---|---|
+| Transport/codec | Partial I/O, header/endian, EOF, lifetime | Vector/test malformed/split, trace connection |
+| Manifest/storage | Offset cuối, hash, Written/Verified | Test biên/ghi đảo thứ tự/corrupt data |
+| Tracker/discovery | Key, clock, TTL biên, endpoint stale | Fake-clock test, registry snapshot và lab |
+| Scheduler | Rarity, credit, generation, source rời | Bảng trace, unit state và trao đổi B→C |
+| Test/harness/thực nghiệm | Oracle, start/end, denominator, failed run | Lệnh runner, metadata/raw/plot tái lập |
+
+Bảng là yêu cầu hiểu theo chuyên môn, không gán tên hoặc đóng góp. Tất cả vẫn cần nền chung về process, IP/port, byte stream, piece và Verified. Người làm test/harness có phần kỹ thuật thực sự; không biến vai trò ấy thành chỉ chụp ảnh và viết bìa.
+
+## 5. Viết báo cáo từ công việc thật, không chép nhật ký thao tác
+
+Bố cục chính theo tài liệu bàn giao: vấn đề/mục tiêu → cơ sở môn → thiết kế → hiện thực/kiểm thử → thực nghiệm/kết quả → giới hạn. Mỗi đoạn trả lời một câu hỏi của người đọc chưa biết cuộc trao đổi nhóm.
+
+Ví dụ chuyển nhật ký thành giải thích:
+
+```text
+Nhật ký: “Sửa writer rồi chạy lại ba lần.”
+Nội dung kỹ thuật: “Hai worker dùng chung Seek/Write có thể làm sai offset.
+Bản sửa serialize cặp thao tác trong một writer. Regression gửi block
+đảo thứ tự và đối chiếu nội dung/hash để kiểm lại lỗi này.”
+```
+
+Chỉ viết câu bản sửa đạt khi có source và test thật. Nếu mới phân tích nguy cơ, ghi đó là thiết kế/ca cần kiểm tra. Không nhập số ví dụ học tập ở Bài 10 thành kết quả hệ thống.
+
+Trích slide bằng tên file và trang PDF 1-based; nêu source/phiên bản Vst và biến thể/adapter tự viết. Khai báo hỗ trợ AI theo yêu cầu môn, nhưng không lấy việc có assistant chuẩn bị khung thành đóng góp code của một sinh viên.
+
+## 6. Demo là một chuỗi bằng chứng ngắn
+
+Với giới hạn 3–5 phút, cần ưu tiên một luồng chứng minh được cơ chế:
+
+| Khoảng gợi ý | Nội dung | Vì sao có mặt? |
+|---|---|---|
+| 30 s | Topology/role và môi trường | Người xem biết ai nối ai |
+| 45 s | Tracker/seed/receiver ready | Chứng minh điều kiện chạy |
+| 60 s | Tải nhiều nguồn và receiver upload | Chứng minh P2P thật |
+| 45 s | Một peer rời và công việc được giao lại | Chứng minh failure path đã kiểm tra |
+| 45 s | Hash/output và một kết quả thật | Chứng minh đúng dữ liệu, giải thích giới hạn |
+
+Tổng khoảng 3 phút 45 giây, là kịch bản đề xuất. Chỉ giữ phần đã có; không dựng cảnh báo thành công giả để đủ kịch bản. Command/config phải đúng revision. Một hình Wireshark nhiều packet không thay việc chỉ ra stream/frame có ý nghĩa.
+
+## 7. Diễn tập câu hỏi theo mức khó
+
+**Nền chung:** IP khác port thế nào? Vì sao một send không bằng một receive? Piece khác TCP segment ra sao?
+
+**Cơ chế:** ai giữ buffer khi WriteAsync đang pending? Vì sao metadata Verified cần rehash sau crash? Vì sao timeout chưa nói peer chết?
+
+**Phản biện:** nếu P2P nhanh vì receiver upload thêm thì phép so nói được gì? Nếu Vst ít GC hơn nhưng throughput không đổi thì có sai không? Nếu nguồn duy nhất rời thì kết quả đúng là gì?
+
+**Bằng chứng:** mở một test và giải thích oracle; từ một plot truy tới CSV/config/revision; chỉ ra phần mình làm và phần mới là đề xuất. Không tự xác nhận nhận việc/hoàn thành của người khác.
+
+## 8. Bài luyện và gợi ý
+
+**A.** Sửa ba phát biểu: “build pass nên P2P chạy”, “GC nên không có lỗi buffer”, “v1 là BitTorrent chuẩn”.
+
+**B.** Chọn một quyết định thiết kế, viết 5 câu: vấn đề, cách chọn, phương án khác, evidence cần có, giới hạn. Chưa có evidence thì nói rõ chưa kiểm chứng.
+
+**C.** Kể một failure path của phần được giao trong 90 giây, rồi trả lời “ai dọn tài nguyên?”. Người nghe đặt thêm một tình huống xen giữa hai bước.
+
+<details>
+<summary>Gợi ý A</summary>
+
+Build chỉ kiểm biên dịch mã hiện có. GC không tự bảo đảm lease/alias và unmanaged lifetime. V1 là giao thức nội bộ lấy cảm hứng phân phối P2P, chưa tương thích BitTorrent. Cả ba cần sửa phạm vi claim, không chỉ thay một từ cho mềm hơn.
+
+</details>
+
+Bạn hiểu bài khi giải thích được cơ chế bằng lời của mình và chỉ được evidence thật, không cần học thuộc một bài nói. Quay lại [lộ trình theo chuyên môn](Lo-trinh-theo-chuyen-mon.md) để chọn chỗ cần bù kiến thức.

@@ -21,7 +21,7 @@ cd BTL.MMT
 2. Mở [workspace](BTL.code-workspace) bằng VS Code hoặc `ET4230.P2P.sln` bằng Visual Studio; làm theo [thiết lập môi trường](docs/trien-khai/Thiet-lap-moi-truong.md) và chạy các lệnh dưới đây.
 3. Mở [mục lục tài liệu](docs/README.md), chọn bài học hoặc hợp đồng liên quan đến task trong [Kế hoạch](docs/Ke-hoach.md).
 
-Người mới có thể bắt đầu với Bài 00–01 trong [Học và thực hành](docs/hoc-tap/README.md). Nhóm nhận việc theo khả năng thực tế; việc đọc bài, nhận task và hoàn thành implementation được ghi nhận riêng.
+Người mới bắt đầu từ [học liệu nền tảng](docs/hoc-tap/README.md), có giải thích, ví dụ và bài tập tự đối chiếu. [Lộ trình chuyên môn](docs/hoc-tap/Lo-trinh-theo-chuyen-mon.md) giúp chọn kiến thức riêng; Linh tự giao việc và bài đọc mỗi tuần theo nền của người nhận. Việc đọc bài, nhận task và hoàn thành implementation được ghi nhận riêng.
 
 ## Kiểm tra bộ khởi tạo
 

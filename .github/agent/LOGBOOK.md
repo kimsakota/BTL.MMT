@@ -43,3 +43,35 @@ Linh giao tạo/đưa dự án lên `https://github.com/kimsakota/BTL.MMT.git` v
 Đã tạo root commit `4c072d6b557e5e6844a7bdd0be86b8c80ae328d7`, message `first commit`, 108 file; push main thành công và đặt upstream origin/main. SHA local/remote trùng. GitHub API xác nhận repository public, default branch main. Không force push, không mời thành viên hoặc tạo board.
 
 Workflow `Project bootstrap validation`, run `39954201976`, completed/success: checker/config/vector/snapshot hash, build, help và version trên Windows đều đạt. Evidence ở `results/setup/github-first-ci.json`. Đã cập nhật bộ nhớ và hướng dẫn kiểm tra để phản ánh việc publish; kết quả này không chứng minh application P2P đã được viết hoặc benchmark đã chạy.
+
+## L006 Ngày 23/10/2026 Lập lịch 8 tuần và việc tuần 1
+
+Linh xác nhận BTL chỉ có 8 tuần làm việc, tuần hiện tại là tuần 1, và hỏi tuần này làm gì. Đã cập nhật trong Kế hoạch hiện có, không tạo thư mục/hồ sơ theo tuần hoặc theo người. Mốc đề xuất: tuần 1 TCP/codec/test, tuần 2 truyền tệp một nguồn, tuần 3 discovery/hai máy, tuần 4 P2P nhiều nguồn, tuần 5 lỗi/tài nguyên/resume theo phạm vi, tuần 6 scheduler/Vst nhỏ/calibration, tuần 7 thực nghiệm, tuần 8 hoàn thiện/bảo vệ. Báo cáo viết dần, không dồn toàn bộ vào tuần 8.
+
+Tuần 1 có việc chung clone/build, nhận việc và review hợp đồng; Linh làm N01/N02, Tú N03/test/CI, Minh piece/block arithmetic, Cường registry/TTL với đồng hồ giả, Quân sequential/bitmap và state độc lập. Đây là kế hoạch được đề xuất, không xác nhận đóng góp hoặc hoàn thành. Các task D01/S01 đầy đủ vẫn cần transport/storage/discovery ở các tuần sau. Đề xuất không xếp V02 pool lớn vào 8 tuần; V01 cần giới hạn API/size đúng audit, phần đã đăng ký bắt buộc không tự cắt. Không suy ra ngày nộp cụ thể từ số tuần; chưa biết quỹ giờ từng người. Chỉ sửa tài liệu/bộ nhớ, không viết implementation hoặc push.
+
+## L007 Ngày 23/10/2026 Viết lại học liệu và trả quyền phân công tuần cho Linh
+
+Linh phản hồi học liệu hời hợt, người học chưa có nền, cần cả kiến thức riêng; Linh muốn tự giao hàng tuần ai làm gì và đọc gì. Đã thay cách tiếp cận checklist bằng 12 bài giảng giải thích cơ chế, ví dụ tính/trace, thực hành tăng mức và gợi ý tự đối chiếu. Thêm nền C# về input/output, kiểu/ref/alias, collection, Memory, Dispose, Task/cancel; thêm 5 đường chuyên môn A–E với prerequisite, mục đọc, câu hỏi, bài nhỏ, phần sâu và giao diện cần hiểu chéo. Không tạo hồ sơ theo tên hoặc theo tuần.
+
+Đã đối chiếu bản trích slide với RFC TCP, BEP và tài liệu Microsoft/Wireshark chính thức; trích slide dùng tên file/trang PDF. Ví dụ bao gồm header/request byte, UTF-8 length, offset/tệp cuối lẻ, TTL clock, rarity/credit, ownership qua queue/I/O, late response, resume và thống kê/denominator. Các số học tập được gắn nhãn, không tạo benchmark giả. Ghi rõ generation local không tự giải quyết ID reuse trên wire.
+
+Đã sửa Kế hoạch: bỏ gán tên vào phần việc tuần 1 và owner mặc định backlog; giữ khung 8 tuần như tham khảo để Linh chọn. AGENTS, README, CONTRIBUTING và memory hiện hành ghi rõ Linh tự phân công và chọn bài đọc/mức thực hành. Phân công trong L006 là đề xuất cũ đã được điều chỉnh, không dùng làm công việc đã nhận.
+
+Trước sửa đã sao lưu 22 file trong `tmp/learning-rewrite/20261023T125344Z`, có hash. QA riêng học liệu kiểm 17 Markdown, 28 citation page ranges và ví dụ số; 4 block C# trích nguyên từ bài được compile/run ở tmp với output đúng. 72 kiểm tra đạt, evidence `results/setup/learning-examples-validation.json`; đây không phải test ứng dụng P2P. Checker toàn repo với `--verify-sources` đạt, evidence `results/setup/learning-docs-validation.json`, 21 snapshot file và 14 PDF đúng hash. Không sửa snapshot hoặc implementation, không stage/commit/push, không xác nhận ai đã học xong.
+
+## L008 Ngày 23/10/2026 Thu hẹp việc tuần 1 cho hai ngày cuối tuần
+
+Linh nói chỉ còn T7/CN, sinh viên còn môn khác, và yêu cầu nghiên cứu đề xuất việc cho 5 người. Đã thay mục tuần 1 trong Kế hoạch hiện có bằng khối lượng150 phút/người cả cuối tuần, bao gồm setup15, nền chung45, bài riêng45, nhóm30 và sửa15; bản rút gọn90 phút. Số giờ là đề xuất, chưa được từng thành viên xác nhận.
+
+Theo yêu cầu lần này đã nêu tên để Linh chọn giao: Linh trace partial receive16 byte, Minh piece/block của tệp21, Cường heartbeat/TTL, Quân sequential/rarest từ bảng5 piece, Tú expected/actual ba CLI command hiện có. Bài đọc được giới hạn tới mục; output bảng/sơ đồ/ít dòng, không tạo báo cáo/hồ sơ theo người. Có key để tự đối chiếu sau khi làm, không gán kết quả bài tập thành hoàn thành của sinh viên. Không yêu cầu code codec, tracker hay Vst ở tuần 1; quỹ giờ môn khác được giữ bằng timebox. Phân công chỉ là đề xuất cuối tuần này; Linh vẫn quyết định nhận/giao việc các tuần sau. Chỉ cập nhật tài liệu/bộ nhớ, không commit/push hoặc gửi tin cho thành viên.
+
+Đã kiểm lại tổng150/90 phút và đáp án partial receive, F21/P8/B4, TTL, rarity bằng tính toán độc lập. Checker repo đạt với251 link local và21 snapshot hash; diff whitespace đạt, không có thay đổi src/tests/configs/references. Đây là QA kế hoạch/bài tập, không phải kết quả sinh viên đã học hoặc chạy ứng dụng.
+
+## L009 Ngày 23/10/2026 Kích hoạt lại repo trong Visual Studio
+
+Linh gửi ảnh Git Changes báo chưa dùng Git và hỏi vì sao chưa kết nối GitHub. Đối chiếu local/remote: origin là `https://github.com/kimsakota/BTL.MMT.git`, main theo dõi origin/main; `git ls-remote` và HEAD cùng SHA `a570e602e04564a06f55be13ae0851220236f6e0`. Repo local và kết nối GitHub hoạt động; chưa xác định lý do Visual Studio không tự kích hoạt repo khi mở folder.
+
+Dùng computer-use chọn đúng cửa sổ BTL Mạng máy tính, Git > Local Repositories > BTL (đường dẫn Mạng máy tính). Sau thao tác, Git Changes - BTL hiển thị main và 40 thay đổi local; accessibility xác nhận đúng root, 0 outgoing / 0 incoming. Không tạo/clone lại repo, không sửa cấu hình Git, không stage/commit/push. Số 0/0 chỉ nói các commit đã đồng bộ, không có nghĩa học liệu chưa commit đã lên GitHub.
+
+Khi bắt đầu đợt này, `agent/` đã bị di chuyển bên ngoài sang `.github/agent/` trong working tree. Đọc/cập nhật memory ở vị trí thực tế, không khôi phục hay sửa hàng loạt tham chiếu cũ vì đây không phải nguyên nhân Git Changes chưa chọn repo. Chưa xác nhận người dùng muốn chuẩn hóa đường dẫn mới.

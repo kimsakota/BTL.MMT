@@ -34,7 +34,7 @@ Với thí nghiệm ngẫu nhiên, đề khuyến nghị từ 5 lần chạy v�
 
 ## Rubric và thời hạn
 
-Theo tài liệu: báo cáo 30%; chương trình/mô phỏng 40%; bảo vệ cá nhân 30%. Mỗi người cần giải thích code và dữ liệu của phần mình, cả nhóm hiểu đường đi một tệp. Thời hạn là trước khi kết thúc học kỳ 3 tuần, lịch cụ thể do giảng viên thông báo. Chưa có ngày nộp chính thức được kiểm chứng. Nhóm theo dõi tiến độ bằng task trong [Kế hoạch](Ke-hoach.md); chưa có thông tin bắt buộc nộp báo cáo tuần.
+Theo tài liệu: báo cáo 30%; chương trình/mô phỏng 40%; bảo vệ cá nhân 30%. Mỗi người cần giải thích code và dữ liệu của phần mình, cả nhóm hiểu đường đi một tệp. Thời hạn trong đề là trước khi kết thúc học kỳ 3 tuần, lịch cụ thể do giảng viên thông báo. Linh xác nhận ngày 23/10/2026 rằng BTL có **8 tuần làm việc và tuần hiện tại là tuần 1**; đây là cơ sở lập lịch. Chưa có ngày nộp chính thức theo lịch lớp được kiểm chứng. Nhóm theo dõi task và [lịch 8 tuần](Ke-hoach.md); chưa có thông tin bắt buộc nộp báo cáo tuần.
 
 Quy ước tệp nộp là `ET4230_HK[ky]_N[so-nhom]_D14.zip`; kỳ và số nhóm chỉ điền khi lớp công bố. Tên `ET4230.P2P` là tên solution kỹ thuật, không phải mã nhóm chính thức.
 

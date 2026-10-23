@@ -8,7 +8,8 @@
 |---|---|
 | Hiểu đề tài, yêu cầu, phạm vi và đầu ra | [Tổng quan](Tong-quan.md) |
 | Xem mốc triển khai, phân công và task | [Kế hoạch](Ke-hoach.md) |
-| Học kiến thức mạng/C# và làm từng bước | [Học và thực hành](hoc-tap/README.md) |
+| Học từ nền mạng/C#, ví dụ và bài tập | [Mục lục học liệu](hoc-tap/README.md), [nền C#](hoc-tap/CSharp-nen-tang.md) |
+| Chọn kiến thức riêng cho phần được giao | [Lộ trình theo chuyên môn](hoc-tap/Lo-trinh-theo-chuyen-mon.md); Linh tự chọn người và bài đọc từng tuần |
 | Tra slide môn học và các chỗ cần đọc kỹ | [Bản đồ slide](hoc-tap/Kien-thuc-tu-slide.md), [ghi chú chuẩn hóa](hoc-tap/Ghi-chu-chuan-hoa-slide.md) |
 | Thiết kế module, state và ownership | [Kiến trúc](thiet-ke/Kien-truc-du-an.md) |
 | Viết codec hoặc ghép các peer | [Giao thức v1](thiet-ke/Giao-thuc-v1.md) |

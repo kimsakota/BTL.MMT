@@ -1,10 +1,10 @@
 # Cách đóng góp cho ET4230 Đề 14
 
-Nhóm: Linh, Minh, Cường, Quân, Tú. Vai trò trong [Kế hoạch](docs/Ke-hoach.md) cần từng người nhận. Repo dùng chung là [kimsakota/BTL.MMT](https://github.com/kimsakota/BTL.MMT), nhánh chính `main`; tài liệu này không chứng minh ai đã được mời hoặc đã làm PR.
+Nhóm: Linh, Minh, Cường, Quân, Tú. Linh tự giao việc và bài đọc từng tuần; [Kế hoạch](docs/Ke-hoach.md) cung cấp backlog để chọn. Repo dùng chung là [kimsakota/BTL.MMT](https://github.com/kimsakota/BTL.MMT), nhánh chính `main`; tài liệu này không chứng minh ai đã được mời hoặc đã làm PR.
 
 ## Một thay đổi nhỏ có thể review
 
-Chọn task ID từ [backlog](docs/Ke-hoach.md), ghi mục tiêu và tiêu chí. Tạo nhánh theo tên không dấu, ví dụ `linh/n02-frame-codec`, `minh/f01-manifest`, `cuong/d01-tracker`, `quan/s01-scheduler`, `tu/n03-test-runner`.
+Với task Linh đã giao, lấy ID từ [backlog](docs/Ke-hoach.md), ghi mục tiêu và tiêu chí. Nhánh của thành viên có thể dùng dạng `ten/task-id-noi-dung`; ví dụ minh họa `ten/n02-frame-codec`, không ngầm gán N02 cho ai.
 
 Trước code, nêu API, caller, dữ liệu vào/ra, ownership/lifetime, giới hạn và lỗi. Tác giả tự viết theo bài học; reviewer/assistant giải thích và đọc diff. Nếu muốn assistant làm trọn một tính năng, yêu cầu rõ phạm vi để giữ mục tiêu học.
 

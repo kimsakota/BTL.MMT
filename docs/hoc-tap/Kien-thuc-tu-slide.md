@@ -35,12 +35,18 @@ Mọi trang bên dưới là **trang PDF 1-based**. Ví dụ `01 Introduction` t
 
 **Trình tự trong TCP không tạo thứ tự toàn hệ thống.** Mỗi kết nối là một dòng có thứ tự; các kết nối từ các nguồn khác nhau vẫn hoàn tất block không theo thứ tự. Vì vậy storage cần offset rõ, scheduler cần state machine và ownership.
 
-## Đường học cho cả nhóm
+## Cách dùng slide để học, không chỉ tìm số trang
+
+Trước một mục được giao, đọc bài giảng tương ứng để có thuật ngữ và một ví dụ nhỏ. Sau đó mở đúng trang PDF, chỉ ra mỗi khối/mũi tên/trường đang nói về lớp nào; tự kể một đường đi dữ liệu và viết một câu hỏi chưa hiểu. Quay về bài tập để tính/vẽ bằng input khác, rồi đối chiếu lời giải. Chỉ nhìn hình hoặc thuộc tên API chưa đủ để viết code đúng.
+
+Không cần đọc liền 697 trang trước khi bắt đầu. Nền chung nằm ở Bài 00–03 và [nền C#](CSharp-nen-tang.md); phần sâu được chọn trong [lộ trình theo chuyên môn](Lo-trinh-theo-chuyen-mon.md). Linh tự giao ai đọc mục nào hàng tuần. Danh sách bên dưới là thứ tự nền mạng để tra cứu, không phải phân công tuần 1 bắt buộc cho mọi người.
+
+## Thứ tự kiến thức mạng để tham khảo
 
 1. Intro 4–13, 52–55, 63–74, 79–106; tự vẽ đường đi một tệp.
 2. IP address 21–43; Internet Protocol 9–11 và 44–50; tự phân biệt IP lắng nghe với IP công bố.
 3. TCP 3–11, 18–27 và Socket 2–21, 27, 32–42; viết bài echo nhỏ sau khi hiểu byte stream.
 4. Link Layer 29–48 và Congestion 3–13, 22–37; tính BDP và pipeline ở mức ứng dụng.
-5. Học C# async/Memory/ownership và chuyển sang [các lesson](README.md).
+5. Học C# async/Memory/ownership cùng [các bài giảng và ví dụ](README.md); thực hành ở mức phù hợp sau khi giải thích được cơ chế.
 
 Các phần ALOHA, STP, routing, WSN/MANET vẫn cần học để nắm toàn môn, nhưng không làm thêm các đề mô phỏng đó vào phạm vi Đề 14. Đọc [ghi chú chuẩn hóa](Ghi-chu-chuan-hoa-slide.md) trước khi dùng công thức để giải thích dữ liệu.
