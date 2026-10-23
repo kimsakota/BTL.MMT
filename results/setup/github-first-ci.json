@@ -1,0 +1,88 @@
+{
+  "repository": {
+    "full_name": "kimsakota/BTL.MMT",
+    "html_url": "https://github.com/kimsakota/BTL.MMT",
+    "private": false,
+    "default_branch": "main"
+  },
+  "localHead": "4c072d6b557e5e6844a7bdd0be86b8c80ae328d7",
+  "runs": [
+    {
+      "id": 39954201976,
+      "head_sha": "4c072d6b557e5e6844a7bdd0be86b8c80ae328d7",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/kimsakota/BTL.MMT/actions/runs/39954201976",
+      "name": "Project bootstrap validation"
+    }
+  ],
+  "headJobs": [
+    {
+      "name": "bootstrap-windows",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v7",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-dotnet@v6",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v7",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Validate docs, config, vectors and snapshot hashes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build the bootstrap and Vst reference",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run bootstrap help",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run bootstrap version",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v7",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-dotnet@v6",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v7",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}

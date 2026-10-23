@@ -13,7 +13,7 @@
 | CLI | Command chưa hỗ trợ | Exit 2 đúng dự kiến |
 | Project audit | Link/JSON/XML/config/vector | Lượt kiểm tra đầu không có lỗi; báo cáo mới nhất bên dưới |
 | Provenance | 21 snapshot file và 14 PDF nguồn | SHA-256 khớp ở lượt kiểm tra nguồn |
-| Git | Khởi tạo main local | Chưa có commit, stage hoặc remote; chưa publish GitHub |
+| Git | Publish `kimsakota/BTL.MMT` | Commit đầu `4c072d6` trên main, theo dõi origin/main; SHA local/remote trùng |
 
 Evidence: [bootstrap-verification.json](../../results/setup/bootstrap-verification.json), [build Release log](../../results/setup/build-release.log), [project-validation.json](../../results/setup/project-validation.json). Thời gian trong JSON là UTC; ngày báo cáo theo Asia/Saigon là 23/10/2026.
 
@@ -23,4 +23,8 @@ Evidence: [bootstrap-verification.json](../../results/setup/bootstrap-verificati
 
 Core chưa có implementation mạng. Chưa có tracker, peer, file transfer, codec test, demo hai máy, resume, adapter Vst hoặc benchmark. Các JSON/vector là thiết kế; CSV kết quả hiện chỉ có header. Bộ khởi tạo không ghi các công việc đó thành đã hoàn thành.
 
-Workflow GitHub đã chuẩn bị nhưng chưa chạy online. Máy các thành viên khác chưa được kiểm tra; từng người làm P00 bằng evidence của máy mình.
+## Xuất bản GitHub
+
+Theo yêu cầu Linh ngày 23/10/2026, bộ khởi tạo đã được đưa lên [kimsakota/BTL.MMT](https://github.com/kimsakota/BTL.MMT), commit đầu `4c072d6` (`first commit`, 108 file). [Workflow lần đầu](https://github.com/kimsakota/BTL.MMT/actions/runs/39954201976) completed/success: kiểm tra tài liệu/config/vector/hash snapshot, build Release, CLI help và version. [Evidence CI](../../results/setup/github-first-ci.json); log local trước push ở [validation](../../results/setup/github-publication-validation.json) và [build](../../results/setup/github-publication-build.log).
+
+Các log khởi tạo trước đó giữ nguyên để truy lịch sử. Máy các thành viên khác chưa được kiểm tra; từng người làm P00 bằng evidence của máy mình. CI bootstrap chưa thay kiểm thử codec, mạng, lifetime hoặc thực nghiệm P2P.

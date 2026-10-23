@@ -33,3 +33,13 @@ Kiểm tra `tools/check_project.py --verify-sources --report results/setup/docs-
 Linh hỏi cấu trúc đã hợp lý chưa. Đã đọc project references, solution, cây source, kiến trúc, config, tests, workflow và ignore. Khung 3 project giữ hướng Cli → Core và VstReference độc lập, phù hợp giai đoạn hiện tại. Core chưa có implementation; test project cần đi cùng codec đầu tiên theo N03. Adapter Vst là phần sau, chưa được tích hợp hoặc kiểm chứng runtime. Không tạo thêm project/class rỗng trong đợt review.
 
 Phát hiện bằng `git check-ignore -v` rằng dòng `VstHelper/` trong `.gitignore` cũng bỏ qua `references/VstHelper/`. Đã giới hạn thành `/VstHelper/`. Kiểm tra lại bằng Git với danh sách đường dẫn phân tách NUL: 21 file source/project cùng README và SNAPSHOT.json không bị ignore; 5 đường dẫn mẫu cho root checkout, bin/obj/tmp/raw vẫn bị ignore. Evidence ở `results/setup/git-ignore-verification.json`. Không sửa snapshot, stage, commit hoặc push.
+
+## L005 Ngày 23/10/2026 Xuất bản GitHub theo yêu cầu Linh
+
+Linh giao tạo/đưa dự án lên `https://github.com/kimsakota/BTL.MMT.git` và cung cấp các lệnh commit/push. Khi kiểm tra, origin đã đúng URL, remote tồn tại nhưng chưa có ref, local main chưa có commit. Không khởi tạo lại repo, không nối thêm dòng echo vào README; cập nhật tên BTL.MMT và hướng dẫn clone, giữ nội dung dự án.
+
+Đã kiểm tra local: checker có đối chiếu nguồn đạt, build Release toàn solution exit 0 (incremental, 0 warning/error ở lần này; 10 CS8500 ở build sạch trước vẫn thuộc audit Vst). Kiểm tra tag của ba action trong workflow có tồn tại. Loại dòng trống thừa cuối 52 file văn bản của dự án, giữ snapshot nguyên byte; kiểm tra staged blobs của đủ 21 file theo SHA-256 và không có bin/obj/tmp. Source/tài liệu/cấu hình/evidence được stage theo yêu cầu, không chứa repository VstHelper gốc của môn khác.
+
+Đã tạo root commit `4c072d6b557e5e6844a7bdd0be86b8c80ae328d7`, message `first commit`, 108 file; push main thành công và đặt upstream origin/main. SHA local/remote trùng. GitHub API xác nhận repository public, default branch main. Không force push, không mời thành viên hoặc tạo board.
+
+Workflow `Project bootstrap validation`, run `39954201976`, completed/success: checker/config/vector/snapshot hash, build, help và version trên Windows đều đạt. Evidence ở `results/setup/github-first-ci.json`. Đã cập nhật bộ nhớ và hướng dẫn kiểm tra để phản ánh việc publish; kết quả này không chứng minh application P2P đã được viết hoặc benchmark đã chạy.
